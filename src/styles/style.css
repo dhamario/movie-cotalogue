@@ -11,14 +11,13 @@ body {
   flex-direction: column;
 }
 
-
 /*
   AppBar
 */
 
 .app-bar {
   padding: 8px 16px;
-  background-color: #fff;
+  background-color: white;
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 10px;
@@ -107,7 +106,6 @@ main {
   margin: 32px 0;
 }
 
-
 /*
   Movie Item
 */
@@ -162,7 +160,6 @@ main {
   -webkit-box-orient: vertical;
 }
 
-
 /*
   Movie
 */
@@ -185,25 +182,6 @@ main {
   margin: 8px 0;
 }
 
-/*
-  Like
-*/
-.like {
-  width: 55px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #db0000;
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  border-radius: 50%;
-  border: 0;
-  font-size: 18px;
-  color: white;
-  cursor: pointer;
-}
 
 /*
   Footer
@@ -221,4 +199,25 @@ footer p {
 footer p a {
   color: #db0000;
   text-decoration: none;
+}
+
+/*
+   Like
+*/
+
+.like {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #db0000;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

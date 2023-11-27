@@ -15,6 +15,7 @@ const Detail = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const movie = await TheMovieDbSource.detailMovie(url.id);
     const movieContainer = document.querySelector('#movie');
+    movieContainer.innerHTML = createMovieDetailTemplate(movie);
 
     LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
@@ -26,8 +27,6 @@ const Detail = {
         vote_average: movie.vote_average,
       },
     });
-
-    movieContainer.innerHTML = createMovieDetailTemplate(movie);
   },
 };
 

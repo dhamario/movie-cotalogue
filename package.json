@@ -1,15 +1,15 @@
 {
-  "name": "movie-catalogue-lite",
+  "name": "movie-catalogue",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-prod" : "npm run build && npm run serve",
     "start-dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "serve": "http-server dist"
+    "serve": "http-server dist --port 9000"
   },
-  "author": "",
+  "keywords": [],
+  "author": "your_name <your_email@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.5",
@@ -30,7 +30,7 @@
     "workbox-webpack-plugin": "^6.5.3"
   },
   "dependencies": {
-    "idb": "^7.1.1",
+    "idb": "^7.0.1",
     "regenerator-runtime": "^0.13.9",
     "workbox-window": "^6.5.3"
   }
